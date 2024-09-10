@@ -300,13 +300,13 @@ $socialAndAppsLinksAreEnabled = $socialLinksAreEnabled || $appsLinksAreEnabled;
 
                 <div class="copy-info text-center mb-md-0mt-3">
                     <div class="px-3 no-credit-custom text-center pb-4">
-                       <a href="https://www.ezead.com/page/get-started-fees-bidding-help" title="Auctions and Classifieds"> Free Auctions and Classifieds ( No Credit Card  Required )</a>
+                        (Country or Region they are on) " Free Auctions and Classifieds "
                     </div>
                     {{-- © {{ date('Y') }} {{ config('settings.app.name') }}. {{ t('all_rights_reserved') }}. --}}
                     © {{ t('all_rights_reserved') }}.
                     @if (!config('settings.footer.hide_powered_by'))
                     @if (config('settings.footer.powered_by_info'))
-                    {{ t('Powered by') }}  <a href="https://ezeadmedia.com/" title="Ezead Media Group" target="_blank">{!! config('settings.footer.powered_by_info') !!}</a>
+                    {{ t('Powered by') }} <a href="https://ezeadmedia.com/" title="Ezead Media Group" target="_blank">{!! config('settings.footer.powered_by_info') !!}</a>
                     @else
                     {{ t('Powered by') }} <a href="https://laraclassifier.com"
                         title="LaraClassifier">LaraClassifier</a>.

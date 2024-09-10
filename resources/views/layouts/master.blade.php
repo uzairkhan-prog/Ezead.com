@@ -449,6 +449,9 @@ if (strpos($currentUrl, '/public') !== false) {
             padding: 5px 0px !important;
         }
     </style>
+
+<!-- AdSense code -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1524317920264753" crossorigin="anonymous"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7EN1M5B31"></script>
 <script>
