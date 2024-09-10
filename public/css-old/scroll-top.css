@@ -1,0 +1,42 @@
+#button-back-top {
+    display: inline-block;
+    background-color: #004cad;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000
+}
+
+.dark #button-back-top {
+    background-color: #004cad;
+}
+
+.light #button-back-top {
+    background-color: #f38520;
+}
+
+#button-back-top:hover {
+    cursor: pointer;
+    background-color: #23222f
+}
+
+#button-back-top:active {
+    background-color: #23222f
+}
+
+#button-back-top.show {
+    opacity: 1;
+    visibility: visible
+}
+
+#button-back-top.show i {
+    color: #fff;
+    font-size: 30px
+}

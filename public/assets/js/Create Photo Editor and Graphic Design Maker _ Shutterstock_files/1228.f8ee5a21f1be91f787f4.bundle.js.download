@@ -1,0 +1,2 @@
+(this.webpackJsonp=this.webpackJsonp||[]).push([[1228],{ZTTW:function(e,t,n){"use strict";function r(){return new Worker(n.p+"editor_palettes.14e3f918197b5bea2cb2.worker.js")}n.r(t),n.d(t,"default",(function(){return r}))}}]);
+//# sourceMappingURL=1228.f8ee5a21f1be91f787f4.bundle.js.map
