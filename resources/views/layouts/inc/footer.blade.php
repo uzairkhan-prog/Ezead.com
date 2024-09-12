@@ -300,7 +300,28 @@ $socialAndAppsLinksAreEnabled = $socialLinksAreEnabled || $appsLinksAreEnabled;
 
                 <div class="copy-info text-center mb-md-0mt-3">
                     <div class="px-3 no-credit-custom text-center pb-4">
-                        (Country or Region they are on) " Free Auctions and Classifieds "
+                        @php
+                        $static_country = config('country.name');
+                        $current_locationn = '';
+                        @endphp
+                        @if (session()->has('neighbour'))
+                        {{ session('country.name') }} or {{ session('neighbour.name') }} Free Auctions and Classifieds
+                        @elseif (session()->has('city'))
+                        {{ session('country.name') }} or {{ session('city.name') }} Free Auctions and Classifieds
+                        @elseif (session()->has('region'))
+                        {{ session('country.name') }} or {{ session('region.name') }} Free Auctions and Classifieds
+                        @elseif (session()->has('province'))
+                        {{ session('country.name') }} or {{ session('province.name') }} Free Auctions and Classifieds
+                        @elseif (session()->has('country'))
+                        {{ session('country.name') }} Free Auctions and Classifieds
+                        @else
+                        Free Auctions and Classifieds
+                        @endif
+                        </a>
+                        </li>
+                    </div>
+                    <div class="px-3 no-credit-custom text-center pb-4">
+                        <a href="https://www.ezead.com/page/get-started-fees-bidding-help">( No Credit Card Required )</a>
                     </div>
                     {{-- © {{ date('Y') }} {{ config('settings.app.name') }}. {{ t('all_rights_reserved') }}. --}}
                     © {{ t('all_rights_reserved') }}.

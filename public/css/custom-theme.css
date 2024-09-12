@@ -21,6 +21,11 @@
 
 @media(max-width:450px) {
     
+    a.Indegigogo, a.kickstarter {
+        display: block;
+        padding: 2px !important;
+    }
+    
     a.dropdown-toggle.nav-link {
         display: inline-block;
         line-height: 20px;
